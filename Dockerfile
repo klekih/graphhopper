@@ -17,4 +17,4 @@ EXPOSE 8989
 
 ENTRYPOINT [ "./graphhopper.sh", "web" ]
 
-CMD [ "/data/romania-latest.osm.pbf" ]
+CMD [ "/graphhopper/local-maps/romania-latest.osm.pbf" ]
