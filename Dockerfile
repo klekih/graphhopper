@@ -9,11 +9,11 @@ COPY . /graphhopper/
 
 WORKDIR /graphhopper
 
+RUN ./graphhopper.sh build
+
 RUN mkdir local-maps
 
 RUN curl https://download.geofabrik.de/europe/romania-latest.osm.pbf -o "local-maps/romania-latest.osm.pbf"
-
-RUN ./graphhopper.sh build
 
 VOLUME [ "/data" ]
 
